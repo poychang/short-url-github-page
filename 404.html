@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Short URL App</title>
+    <script type="text/javascript">
+        (function () {
+            fetch('routes.json')
+                .then(response => response.json())
+                .then(routes => {
+                    var fragment = location.pathname.split('/').pop();
+                    var url = routes[fragment];
+                    console.log(`${fragment}, ${url}`);
+                    location.href = url ? url : './index.html';
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        })();
+    </script>
+</head>
+
+</html>
