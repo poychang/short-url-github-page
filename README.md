@@ -1,5 +1,5 @@
 # Short URL App
 
-A Short URL App base on github page.
+A Short URL App base on GitHub Pages.
 
-若要增加短網址，請直接修改 `routes.json` 檔，以 `"key" : "value"` 的方式建立，`key` 為短網址名稱，`value` 為目標網址。
+If you want to add a short URL, please modify the `routes.json` file directly, and set it up in the way of `"key": "value"`, `key` is the name of the short URL, and `value` is the destination URL.
